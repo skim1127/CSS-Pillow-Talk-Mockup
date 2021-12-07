@@ -1,3 +1,54 @@
+/* Helper Code */
+* {
+  border: 1px solid darkgray;
+}
+
+/* General */
 body {
   background: blanchedalmond;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+/* Header */
+.a {
+  width: 100%;
+  min-height: 15vh;
+  background-color: #b68ac7;
+}
+
+/* Main */
+.b {
+  min-height: 65vh;
+  background-color: #f7941f;
+}
+
+.c {
+  min-height: 15vh;
+  background-color: lightgreen;
+}
+
+/* Wide Device */
+@media (min-width: 700px) {
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .a {
+    min-height: 30vh;
+    width: 100vw;
+  }
+
+  .b {
+    min-height: 65vh;
+    width: 78vw;
+  }
+
+  .c {
+    min-height: 65vh;
+    width: 15vw;
+    flex-grow: 1;
+  }
 }
